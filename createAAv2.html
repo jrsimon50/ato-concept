@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>AT&T | You Coach ATO</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      $(function(){
+          $('a').each(function(){
+              if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+              }
+          });
+      });
+  </script>
+</head>
+
+<body>
+  <script>
+    function la(src)
+    {
+    window.location=src;  
+    }
+  </script>
+  <header>
+  <img src="images/AT&T_globe.png" alt="globe" title="attGlobe" class="left" />
+  <img src="images/owl2.png" alt="owl" title="owl" class="owl" />
+  <h1>You Coach ATO</h1>
+  <div id="nav_bar">
+    <nav>
+      <ul>
+        <li><a href="indexAv.html" class="nav">Home</a></li>
+        <li><a href="createAv.html" class="nav">Create Plan</a></li>
+        <li><a href="reviewAv.html" class="nav">Review/ Edit Plan</a></li>
+        <li><a href="coachingAv.html" class="nav">Coaching</a>
+        </li>
+        <li><a href="index.html" class="nav">ATO View</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div>  
+  <p>Select Hierarchy &emsp;&emsp;&emsp; | Plan Type</p>
+  <select onchange="la(this.value)">
+    <option>Manager A</option>
+    <option value="amMian_createAv.html">Previous Selection</option>
+  </select>
+    <select>
+    <option>Select Plan</option>
+    <option>30 day</option>
+    <option>60 day</option>
+    <option>90 day</option>
+  </select> 
+  <br><br>
+  <select onchange="la(this.value)">
+   <option>Manager B</option>
+  </select> 
+  </div>
+  </div>
+  <div class="example-1">
+    <div class="example-2">
+      <h3>Metric Goal</h3>
+      <h2>Goal</h2>
+      <select>
+        <option>Metric</option>
+		    <option value="text">AIQ</option>
+		    <option value="text">AirTie-Smart Extender Billing</option>
+		    <option value="text">Available Time Not Dispatched</option>
+		    <option value="text">Billing</option>
+        <option value="text">Dispatch Efficiency</option>
+		    <option value="text">Exception Hours</option>
+        <option value="text">Helper Rate</option>
+        <option value="text">HPC</option>
+        <option value="text">Motor Vehicle Accidents-MVA</option>
+        <option value="text">Pair Change</option>
+        <option value="text">Personal Injury Accidents-PIA</option>
+        <option value="text">Productivity</option>
+        <option value="text">SIN 30</option>
+        <option value="text">Time Validation</option>
+        <option value="text">Upfront Usage</option>
+        <option value="text">VOC</option>
+        <option value="text">WiFi Suite of Tools</option> 			
+	    </select><!--
+      <select>
+        <option>Value Type</option>
+        <option value="text">Numeric</option>
+        <option value="text">Percentage</option> 
+      </select>-->
+      <label for="plans">Sub-Category:</label>
+      <select name="plans">
+        <!--<option>Metric Sub-Category</option>-->
+        <optgroup label="AIQ">
+          <option value="text">AIQ sub-category</option>
+        </optgroup>
+        <optgroup label="AirTie-Smart Extender Billing">
+          <option value="text">AirTie sub-category</option>
+        </optgroup>
+        <optgroup label="Available Time Not Dispatched">
+          <option value="text">Available time sub-category</option>
+        </optgroup>
+        <optgroup label="Billing">
+          <option value="text">Billing sub-category</option>
+        </optgroup>
+        <optgroup label="Dispatch Efficiency">
+          <option value="text">Efficiency sub-category</option>
+        </optgroup>
+        <optgroup label="Exception Hours">
+          <option value="text">Exception sub-category </option>
+        </optgroup>
+        <optgroup label="Helper Rate">
+          <option value="text">Helper sub-category</option>
+        </optgroup>
+        <optgroup label="HPC">
+          <option value="text">HPC sub-category </option>
+        </optgroup>
+        <optgroup label="Motor Vehicle Accidents-MVA">
+          <option value="text">MVA sub-category</option>
+        </optgroup>
+        <optgroup label="Pair Change">
+          <option value="text">Pair Change sub-category </option>
+        </optgroup>
+        <optgroup label="Personal Injury Accidents-PIA">
+          <option value="text">PIA sub-category </option>
+        </optgroup>
+        <optgroup label="Productivity">
+          <option value="text">Productivity sub-category</option>
+        </optgroup>
+        <optgroup label="SIN 30">
+          <option value="text">SIN 30 sub-category </option>
+        </optgroup>
+        <optgroup label="Time Validation">
+          <option value="text">Time Validation sub-category</option>
+        </optgroup>
+        <optgroup label="Upfront Usage">
+          <option value="text">Upfront Usage sub-category </option>
+        </optgroup>
+        <optgroup label="VOC">
+          <option value="text">VOC sub-category</option>
+        </optgroup>
+        <optgroup label="Wifi Suite of Tools">
+          <option value="text">Wifi sub-category</option>
+        </optgroup>
+        <!--
+        <option value="text">AirTie-Smart Extender Billing</option>
+        <option value="text">Available Time Not Dispatched</option>
+        <option value="text">Billing</option>
+        <option value="text">Dispatch Efficiency</option>
+        <option value="text">Exception Hours</option>
+        <option value="text">Helper Rate</option>
+        <option value="text">HPC</option>
+        <option value="text">Motor Vehicle Accidents-MVA</option>
+        <option value="text">Pair Change</option>
+        <option value="text">Personal Injury Accidents-PIA</option>
+        <option value="text">Productivity</option>
+        <option value="text">SIN 30</option>
+        <option value="text">Time Validation</option>
+        <option value="text">Upfront Usage</option>
+        <option value="text">VOC</option>
+        <option value="text">Wifi Suite of Tools</option>
+      </optgroup>
+    -->
+      </select>
+         <form>
+          <label>Set Metric Goal</label>
+          <input type="range" name="Benchmark" id="ageInputId" value="24" min="-100" max="199" oninput="ageOutputId.value = ageInputId.value">
+          <output name="ageOutputName" id="ageOutputId">100</output>
+        </form>
+      <textarea>Enter Comments</textarea>
+      <h2>Solution</h2>
+      <textarea>Enter Comments</textarea><br>
+      <button class="btn-copy">Add Additional Goal</button>
+    </div>
+  </div>
+  <div class="example-1">
+    <div class="example-2">
+      <h3>Administrative Goal</h3>
+      <h2>Goal</h2>
+      <select>
+        <option>Administrative</option>
+        <option value="text">Coaching Discussions</option>
+        <option value="text">Crew Meetings</option>
+        <option value="text">Disciplinary</option>
+        <option value="text">ECA</option>
+        <option value="text">EOY Appraisal</option>
+        <option value="text">Grammer</option>
+        <option value="text">MAS</option>
+        <option value="text">Quality observations</option>
+        <option value="text">R.I.D.E.</option> 
+        <option value="text">Safety Meetings</option> 
+        <option value="text">Safety Observations</option> 
+        <option value="text">Scheduling</option>
+        <option value="text">Time Approval</option>
+        <option value="text">Other-Please Specify</option>       
+      </select> <!--
+      <select name="plans">
+        <option>Reason</option>
+        <option value="text">Skill</option>
+        <option value="text">Will</option>
+        <option value="text">Skill/ Will</option>
+        <option value="text">N/A</option>-->
+      </select><br><br>
+      <textarea>Enter Comments</textarea>
+      <h2>Solution</h2>
+      <textarea>Enter Comments</textarea><br>
+      <button class="btn-copy">Add Additional Goal</button>
+    </div>
+  </div>
+  <div class="example-1">
+    <div class="example-2">
+      <h3>Leadership Goal</h3>
+      <h2>Goal</h2>
+      <select>
+        <option>Soft Skill</option>
+        <option value="text">Adaptability</option>
+        <option value="text">Communication</option>
+        <option value="text">Creativity</option>
+        <option value="text">Critical Thinking</option>
+        <option value="text">Interpersonal Communication</option>
+        <option value="text">Organization</option>
+        <option value="text">Other-Please specify</option>
+        <option value="text">Problem Solving</option>
+        <option value="text">Punctuality</option> 
+        <option value="text">Teamwork Skills</option> 
+        <option value="text">Time Management</option>       
+      </select> <!--
+      <select name="plans">
+        <option>Reason</option>
+        <option value="text">Skill</option>
+        <option value="text">Will</option>
+        <option value="text">Skill/ Will</option>
+        <option value="text">N/A</option>-->
+      </select><br><br>
+      <textarea>Enter Comments</textarea>
+      <h2>Solution</h2>
+      <textarea>Enter Comments</textarea><br>
+      <button class="btn-copy">Add Additional Goal</button>
+    </div>
+  </div>
+  <script type="text/javascript">
+        $(function(){
+          $(".btn-copy").on('click', function(){
+            var ele = $(this).closest('.example-2').clone(true);
+            $(this).closest('.example-2').after(ele);
+          })
+        })
+  </script>
+  <input type="submit" value="submit" id="button" onclick="alert('Your Plan has been submitted!')"/>
+  <footer>Created by: Humberto Hernandez | HH8905@att.com<br> for demonstration purposes only.
+  </footer>
+</body>
+</html>
